@@ -1,0 +1,177 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 8px;
+    font-size: 20px;
+	display: block;
+	overflow-x: hidden;
+}
+
+div{
+  	
+}
+
+/*column layout*/
+  * {
+   box-sizing: border-box; 
+  }
+  #main {
+    display: flex;
+    min-height: calc(100vh - 40vh);
+  }
+  #main > article {
+    flex: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+    background: beige;
+  }
+
+  footer, article, aside {
+    padding: 1em;
+  }
+  footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+/*column layout end*/
+
+/*form*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=reset] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  input[type=reset]:hover {
+    background-color: #45a049;
+  }
+  /*form end*/
+
+* {
+	box-sizing: border-box;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	float: left;
+	padding: 10px
+}
+
+
+.left {
+	width: 60%;
+}
+
+.right {
+	width: 40%;
+	background-color: #724e14;
+	height: auto;
+	padding: 25px;
+}
+
+.gCAT {
+	height: 240;
+}
+.head {
+	display: block;
+    font-weight: bold;
+	display: flex;
+}
+
+.border1 {
+	max-width: 646px;
+}
+
+.aboveTable {
+	background-color: rgba(128,128,128,.25);
+	width: 100%;
+	height: 300px;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.card {
+	margin: 10px;
+	position: relative;
+	top: 10px;
+}
+
+.innerAT {
+	padding-left: 1.6rem;
+    padding-right: 1.6rem;
+	display: flex;
+}
+
+.innerAT2 {
+	justify-content: flex-start;
+	padding: 15px;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 768px){
+	.wrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+		max-width: 1200px;
+		margin: auto;
+	}
+
+	.card {
+		width: 350px;
+	}
+
+	.banner {
+		display: block;
+	}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

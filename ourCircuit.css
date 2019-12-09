@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+/*    margin: 8px;*/
+    font-size: 20px;
+	display: block;
+	overflow-x: hidden;
+}
+
+div{
+  	
+}
+
+.wPlan {
+	padding: 0 10%;
+}
+.day1 {
+	border: none;
+	background-color: #a19a8f;
+	background-repeat: no-repeat;
+  	background-origin: padding-box;
+	padding: 25px;
+}
+
+.day2 {
+	border: none;
+	background-color: #724e14;
+	background-repeat: no-repeat;
+  	background-origin: padding-box;
+	padding: 25px;
+}
+
+span.b {
+  display: inline-block;
+
+}
+.media-object {
+	margin-right: 1em;
+}
+
+.media-heading {
+	margin: 0 0 .5em;
+}
