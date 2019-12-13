@@ -1,0 +1,21 @@
+#centralised around my workout plan
+	
+	Home:
+		Introduction to fitness
+	Fitness:
+		Intro
+		What is fitness
+		Benefits
+	Our Workout plan:
+		Do not do these mistakes
+		Paste in your workout plan
+	Nutrition:
+		What is nutrition
+		Eat accordingly to your bmi
+	Contact Us:
+		Form
+	
+	
+
+
+

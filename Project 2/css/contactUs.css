@@ -1,0 +1,166 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 8px;
+    font-size: 20px;
+	display: block;
+	overflow-x: hidden;
+}
+
+/*column layout*/
+  * {
+   box-sizing: border-box; 
+}
+/*column layout end*/
+
+/*form*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=reset] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  input[type=reset]:hover {
+    background-color: #45a049;
+  }
+  /*form end*/
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	float: left;
+	padding: 10px
+}
+
+
+.left {
+	width: 60%;
+}
+
+.right {
+	width: 40%;
+	background-color: #724e14;
+	height: auto;
+	padding: 25px;
+}
+
+.gCAT {
+	height: 240;
+}
+
+
+.border1 {
+	max-width: 646px;
+}
+
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.card {
+	margin: 10px;
+	padding: 5px;
+	position: relative;
+
+}
+
+  .media {
+    display: flex;
+	width: 100%;
+    background: #45a049;
+    padding: 1em;
+    border-radius: 3px;
+	width: 100%;
+}
+
+  .media-object {
+    margin-right: 1em;
+	width: 50%;
+}
+  .media-body {
+    flex: 1;
+}
+  .media-heading {
+	margin-left: 1em;
+	max-width: 24em;
+	order: -1;
+	font-size: 35px;
+}
+/* media queries */
+
+@media only screen and (min-width: 768px){
+	.wrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+		max-width: 1200px;
+		margin: auto;
+	}
+
+	.card {
+		width: 350px;
+	}
+
+	.banner {
+		display: block;
+	}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width:320px) {
+	h1 {
+		font-size: 20px;
+	}
+	
+	img {
+	   width:300px;
+	   height: 300px;
+	 }
+	
+}
